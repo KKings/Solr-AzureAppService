@@ -58,21 +58,48 @@ $xml.DocumentElement.AppendChild($field)
 $xml.Save($path)
 
 $sitecoreCores = @(
-	"sitecore_analytics_index", 
-    "sitecore_core_index", 
-    "sitecore_fxm_master_index", 
-	"sitecore_fxm_web_index", 
-	"sitecore_list_index", 
-    "sitecore_marketing_asset_index_master", 
-    "sitecore_marketing_asset_index_web", 
-	"sitecore_marketingdefinitions_master", 
-	"sitecore_marketingdefinitions_web", 
-    "sitecore_master_index", 
-	"sitecore_suggested_test_index", 
-	"sitecore_testing_index", 
-	"sitecore_web_index", 
+	"hut_master_index",
+	"hut_master_index_rebuild",
+	"hut_review_index",
+	"hut_review_index_rebuild",
+	"hut_web_index",
+	"hut_web_index_rebuild",
+	"sitecore_core_index",
+	"sitecore_fxm_master_index",
+	"sitecore_fxm_web_index",
+	"sitecore_marketing_asset_index_master",
+	"sitecore_marketing_asset_index_web",
+	"sitecore_marketingdefinitions_master",
+	"sitecore_marketingdefinitions_web",
+	"sitecore_master_index",
+	"sitecore_master_index_rebuild",
+	"sitecore_personalization_index",
+	"sitecore_review_index",
+	"sitecore_review_index_rebuild",
+	"sitecore_suggested_test_index",
+	"sitecore_sxa_master_index",
+	"sitecore_sxa_web_index",
+	"sitecore_testing_index",
+	"sitecore_web_index",
+	"sitecore_web_index_rebuild",
     "social_messages_master", 
-	"social_messages_web"
+	"social_messages_web",
+	"providers_master_index",
+	"providers_master_index_rebuild",
+	"providers_web_index",
+	"providers_web_index_rebuild",
+	"taxonomy_master_index",
+	"taxonomy_master_index_rebuild",
+	"taxonomy_web_index",
+	"taxonomy_web_index_rebuild",
+	"events_master_index",
+	"events_master_index_rebuild",
+	"events_web_index",
+	"events_web_index_rebuild",
+	"locations_master_index",
+	"locations_master_index_rebuild",
+	"locations_web_index",
+	"locations_web_index_rebuild"
 )
 
 foreach ($coreName in $sitecoreCores) {
@@ -85,6 +112,8 @@ foreach ($coreName in $sitecoreCores) {
 }
 
 $xdbCores = @(
+	"sitecore_xdb",
+	"sitecore_xdb_rebuild",
 	"xdb", 
     "xdb_rebuild"
 )

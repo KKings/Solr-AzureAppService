@@ -106,7 +106,7 @@
                         "[concat('Microsoft.Web/Sites/', parameters('siteName'), '/config/web')]"
                     ],
                     "properties": {
-                        "RepoUrl": "https://github.com/jraps20/Solr-AzureAppService",
+                        "RepoUrl": "https://github.com/kkings/Solr-AzureAppService",
                         "branch": "Sitecore",
                         "IsManualIntegration": true
                     }
